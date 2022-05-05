@@ -36,7 +36,6 @@ const Footer = () => {
                         <h6> <a href='/'><img src='https://www.svgrepo.com/show/303145/instagram-2-1-logo.svg' alt=''></img></a></h6>
 
                         <h6> <a href='/'> <img width='28px' src='https://upload.wikimedia.org/wikipedia/commons/thumb/0/09/YouTube_full-color_icon_%282017%29.svg/2560px-YouTube_full-color_icon_%282017%29.svg.png' alt=''></img></a></h6>
-
                     </div>
                 </div>
             </div>

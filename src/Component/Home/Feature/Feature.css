@@ -1,0 +1,64 @@
+.feature {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.feature-image img {
+    width: 75%;
+    height: 70%;
+    text-align: center;
+    margin: auto;
+    display: block;
+    padding-top: 10px;
+}
+
+.feature-image {
+    margin: 0px;
+}
+
+.feature-image {
+    height: 300px;
+    border: 1px solid springgreen;
+    border-radius: 10px;
+    margin: 7px;
+    box-shadow: 2px 4px rgba(21, 237, 129, 0.704);
+}
+
+.feature-image h6 {
+    text-align: center;
+    margin: auto;
+    margin-bottom: 15px;
+    margin-top: 8px;
+}
+
+.img-hover {
+    transition: transform .2s;
+    /* Animation */
+    /* width: 200px;
+    height: 200px;
+    margin: 0 auto; */
+}
+
+.img-hover:hover {
+    transform: scale(1.2);
+    /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+}
+
+
+@media only screen and (max-width: 720px) {
+    .feature {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+
+    }
+
+    .feature-image img {
+        height: 50%;
+    }
+
+    .feature-image {
+        height: 150px;
+        width: 90%;
+    }
+
+}

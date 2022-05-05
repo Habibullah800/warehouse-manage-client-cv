@@ -1,0 +1,28 @@
+.category {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    margin-bottom: 150px;
+}
+
+.Category-title {
+    text-align: center;
+    margin: auto;
+    display: block;
+    color: #FF487A;
+    font-weight: 700;
+}
+
+.Category-heading {
+    text-align: center;
+    margin: auto;
+    display: block;
+    color: #11D6E1;
+    margin-top: 60px;
+    margin-bottom: 30px;
+    font-weight: 700;
+
+}
+
+.Category-title:hover {
+    color: #11D6E1;
+}
