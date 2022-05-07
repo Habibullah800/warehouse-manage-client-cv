@@ -4,6 +4,7 @@ import { Button, Form } from 'react-bootstrap';
 import { Link, useNavigate } from 'react-router-dom';
 import app from '../../../firebase.init';
 import useFirebase from '../../Hooks/UseFirebase';
+import DeliveryBtn from '../DeliveryBtn/DeliveryBtn';
 import './Login.css'
 const auth = getAuth(app);
 const Login = () => {
@@ -62,6 +63,9 @@ const Login = () => {
     const navigateRegister = event => {
         navigate('/register')
     }
+    const navigateDelivery = event => {
+        navigate('/delivery')
+    }
 
     return (
         <div className='login-container'>
@@ -72,7 +76,8 @@ const Login = () => {
                 user?.uid
                     ?
                     <div className='mb-4' >
-                        <Link className='btn btn-warning' to='/placeOrder'> Take our Treatment</Link>
+                        {/* <Link className='btn btn-warning' to='/delivery'> Take our Treatment</Link> */}
+                        <DeliveryBtn></DeliveryBtn>
                     </div>
                     :
                     <div>
@@ -81,35 +86,48 @@ const Login = () => {
                         <br></br>
                     </div>
             }
+            {/* ----------------------------------------- */}
+            {
+                user?.uid
+                    ?
+                    <div className='mb-4' >
 
-            <h4>Or</h4>
-            <Form onSubmit={handleSubmit}>
-                <Form.Group>
-                    <input ref={emailRef} type='text' placeholder='Your Email' required></input>
-                    <br></br>
-                    <br></br>
-                </Form.Group>
+                    </div>
+
+                    :
+                    <div>
+                        <h4>Or</h4>
+                        <Form onSubmit={handleSubmit}>
+                            <Form.Group>
+                                <input ref={emailRef} type='text' placeholder='Your Email' required></input>
+                                <br></br>
+                                <br></br>
+                            </Form.Group>
 
 
-                <Form.Group>
-                    <input ref={passwordRef} type='password' placeholder='Password' required></input>
-                    <br></br>
-                </Form.Group>
-                <br></br>
+                            <Form.Group>
+                                <input ref={passwordRef} type='password' placeholder='Password' required></input>
+                                <br></br>
+                            </Form.Group>
+                            <br></br>
 
-                <input type='submit' value='Login' ></input>
-                <br></br>
-                <p className='text-danger'><small> {error}</small>
-                </p>
-                <br></br>
-                <Button onClick={handlePasswordReset} variant="link">Forget Password ?</Button>
-                <br></br>
-                <p>{varification}</p>
-            </Form>
+                            <input type='submit' value='Login' ></input>
+                            <br></br>
+                            <p className='text-danger'><small> {error}</small>
+                            </p>
+                            <br></br>
+                            <Button onClick={handlePasswordReset} variant="link">Forget Password ?</Button>
+                            <br></br>
+                            <p>{varification}</p>
+                        </Form>
 
-            <p className='mt-4'> New to our Telemedicine Service ? <br></br>
-                <Link to='/register' className='text-danger pe-auto text-decoration-none' onClick={navigateRegister}>Click here to Register</Link>
-            </p>
+                        <p className='mt-4'> New to our Telemedicine Service ? <br></br>
+                            <Link to='/register' className='text-danger pe-auto text-decoration-none' onClick={navigateRegister}>Click here to Register</Link>
+                        </p>
+                    </div>
+            }
+
+
         </div>
     );
 };

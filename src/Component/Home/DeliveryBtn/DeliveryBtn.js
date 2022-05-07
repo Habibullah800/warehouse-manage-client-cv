@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import Delivery from '../Delivery/Delivery';
-import Product from '../product/Product';
+import './DeliveryBtn.css'
 
 const DeliveryBtn = () => {
 
@@ -13,7 +13,7 @@ const DeliveryBtn = () => {
 
     }, []);
     return (
-        <div>
+        <div className='product-container'>
             {
                 products.map(product => <Delivery
                     key={product.id}
