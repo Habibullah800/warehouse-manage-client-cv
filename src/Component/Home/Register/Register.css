@@ -1,0 +1,11 @@
+.register-container {
+    margin-top: 150px;
+}
+
+.register-container h3 {
+    margin-bottom: 20px;
+}
+
+.register-container input {
+    width: 220px;
+}

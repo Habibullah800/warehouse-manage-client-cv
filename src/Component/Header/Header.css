@@ -1,4 +1,18 @@
-.navbar {
-    background-color: #7efff5;
-    color: black;
+.navText {
+    color: whitesmoke;
+    text-decoration: none;
+    font-weight: 700;
+    margin-left: 20px;
+    margin-right: 15px;
+    font-size: 15px;
+    margin-bottom: 5px;
+}
+
+.userName {
+    color: white;
+}
+
+.photo {
+    height: 35px;
+    border-radius: 15px;
 }

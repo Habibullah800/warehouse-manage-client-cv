@@ -26,3 +26,11 @@
 .Category-title:hover {
     color: #11D6E1;
 }
+
+@media only screen and (max-width: 720px) {
+    .category {
+        grid-template-columns: repeat(2, 1fr);
+        margin-bottom: 50px;
+    }
+
+}

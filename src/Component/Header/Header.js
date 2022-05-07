@@ -1,31 +1,43 @@
 import React from 'react';
+import { Container, Nav, Navbar } from 'react-bootstrap';
+import { Link, } from 'react-router-dom';
+import useFirebase from '../Hooks/UseFirebase';
 import './Header.css'
-import { Container, Nav, Navbar, NavDropdown } from 'react-bootstrap';
 
 const Header = () => {
+    const { user, handleSignOut } = useFirebase()
+    const photo = user?.photoURL
     return (
         <div>
-            <Navbar className="fixed-top navbar" collapseOnSelect expand="lg" >
+            <Navbar fixed="top" collapseOnSelect expand="lg" bg="primary" variant="dark">
                 <Container>
-                    <Navbar.Brand href="#home">React-Bootstrap</Navbar.Brand>
+                    <Navbar.Brand href="/">Dr. On Demand</Navbar.Brand>
                     <Navbar.Toggle aria-controls="responsive-navbar-nav" />
                     <Navbar.Collapse id="responsive-navbar-nav">
                         <Nav className="me-auto">
-                            <Nav.Link href="#features">Features</Nav.Link>
-                            <Nav.Link href="#pricing">Pricing</Nav.Link>
-                            <NavDropdown title="Dropdown" id="collasible-nav-dropdown">
-                                <NavDropdown.Item href="#action/3.1">Action</NavDropdown.Item>
-                                <NavDropdown.Item href="#action/3.2">Another action</NavDropdown.Item>
-                                <NavDropdown.Item href="#action/3.3">Something</NavDropdown.Item>
-                                <NavDropdown.Divider />
-                                <NavDropdown.Item href="#action/3.4">Separated link</NavDropdown.Item>
-                            </NavDropdown>
+
+                            <Link className='navText' to="/">Home</Link>
+                            <Link className='navText' to="/blog">blog</Link>
+                            <Link className='navText' to="/about">About</Link>
+
                         </Nav>
                         <Nav>
-                            <Nav.Link href="#deets">More deets</Nav.Link>
-                            <Nav.Link eventKey={2} href="#memes">
-                                Dank memes
-                            </Nav.Link>
+                            <span className='userName me-2'> {user?.displayName && user.displayName}</span>
+
+                            <span> <img className='photo me-2' src={photo} alt=''></img></span>
+
+                            {
+                                user?.uid
+                                    ?
+                                    <div className='dropdown'>
+                                        <button className='btn btn-success' onClick={handleSignOut}>Sign Out
+                                            <i className='fa fa-caret-down'></i>
+                                        </button>
+                                    </div>
+                                    :
+                                    <Link className='navText' to='/login'> Login</Link>
+                            }
+
                         </Nav>
                     </Navbar.Collapse>
                 </Container>
