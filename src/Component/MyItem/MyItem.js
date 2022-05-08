@@ -39,7 +39,7 @@ const MyItem = () => {
 
 
                 {
-                    products.slice(6, 20).map(product => <div
+                    products.slice(3, 20).map(product => <div
                         key={product._id}
                     >
 
