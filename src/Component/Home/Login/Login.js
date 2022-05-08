@@ -95,19 +95,19 @@ const Login = () => {
                         <h4>Or</h4>
                         <Form onSubmit={handleSubmit}>
                             <Form.Group>
-                                <input ref={emailRef} type='text' placeholder='Your Email' required></input>
+                                <input className='w-25' ref={emailRef} type='text' placeholder='Your Email' required></input>
                                 <br></br>
                                 <br></br>
                             </Form.Group>
 
 
                             <Form.Group>
-                                <input ref={passwordRef} type='password' placeholder='Password' required></input>
+                                <input className='w-25' ref={passwordRef} type='password' placeholder='Password' required></input>
                                 <br></br>
                             </Form.Group>
                             <br></br>
 
-                            <input type='submit' value='Login' ></input>
+                            <input className='btn btn-primary' type='submit' value='Login' ></input>
                             <br></br>
                             <p className='text-danger'><small> {error}</small>
                             </p>
@@ -117,14 +117,14 @@ const Login = () => {
                             <p>{varification}</p>
                         </Form>
 
-                        <p className='mt-4'> New to our Telemedicine Service ? <br></br>
+                        <p className='mt-4'> New to this Kent Fashion website? <br></br>
                             <Link to='/register' className='text-danger pe-auto text-decoration-none' onClick={navigateRegister}>Click here to Register</Link>
                         </p>
                     </div>
             }
 
 
-        </div>
+        </div >
     );
 };
 

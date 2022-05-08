@@ -1,6 +1,12 @@
 .login-container {
     margin-top: 100px;
+    border: 1px solid blue;
+    margin-left: 5%;
+    margin-right: 5%;
+    border-radius: 10px;
 }
+
+
 
 .login-container h3 {
     margin: 20px;
