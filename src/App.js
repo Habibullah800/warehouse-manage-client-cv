@@ -9,9 +9,9 @@ import Home from './Component/Home/Home/Home';
 import DeliveryBtn from './Component/Home/DeliveryBtn/DeliveryBtn';
 import AddItem from './Component/Home/AddItem/AddItem';
 import ManageInventory from './Component/Home/ManageInventory/ManageInventory';
-import Manage from './Component/Home/ManageInventory/Manage';
 import Blog from './Component/Home/Blog/Blog';
 import MyItem from './Component/MyItem/MyItem';
+import ManageProduct from './Component/Home/ManageInventory/ManageProduct';
 
 
 function App() {
@@ -27,7 +27,7 @@ function App() {
         <Route path='delivery' element={<DeliveryBtn></DeliveryBtn>}></Route>
         <Route path='addItem' element={<AddItem></AddItem>}></Route>
         <Route path='myitem' element={<MyItem></MyItem>}></Route>
-        <Route path='manageInventory' element={<Manage></Manage>}></Route>
+        <Route path='manageInventory' element={<ManageProduct></ManageProduct>}></Route>
         <Route path='/*' element={<NotFound></NotFound>}></Route>
       </Routes >
 

@@ -1,26 +1,36 @@
-/* .manageInven {
-    margin-top: 100px;
-} */
-
-.manageItem {
-    display: flex;
-    align-items: center;
-    width: 50%;
-    margin: auto;
-
-
+.manage-page {
+    border: 1px solid blue;
+    margin-left: 25%;
+    margin-right: 25%;
+    border-radius: 10px;
 }
 
-.manageItem img {
-    height: 30px;
-    width: 50px;
-    border-radius: 50px;
+.manage-product {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    border: 1px solid lightcyan;
+    background-color: aqua;
+    border-radius: 10px;
+}
 
+.manage-product img {
+    width: 5%;
+    height: 5%;
+    border-radius: 10px;
+}
+
+.product-info {
+    margin-left: 10px;
+}
+
+.text {
+    margin-top: 80px;
+    margin-bottom: 30px;
 }
 
 .login {
-
-    margin-bottom: 300px;
-
-
+    margin-top: 100px;
+    margin-bottom: 30px;
 }

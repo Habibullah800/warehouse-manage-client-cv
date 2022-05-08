@@ -8,9 +8,9 @@ const Services = () => {
 
     return (
         <div className='title'>
-            <h2 className='text-primary'>Special Telemedicine Service Dr. on Demand</h2>
+            <h2 className='text-primary'>Warehouse Management website</h2>
             <hr></hr>
-            <h3>Our treatment</h3>
+            <h3>Inventory</h3>
             <div className='service-container'>
 
                 {
