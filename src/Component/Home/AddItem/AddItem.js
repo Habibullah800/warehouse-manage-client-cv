@@ -1,3 +1,4 @@
+import { Toast } from 'bootstrap';
 import React from 'react';
 import { Button, Form } from 'react-bootstrap';
 import { useForm } from 'react-hook-form';
@@ -7,6 +8,10 @@ import "./AddItem.css"
 
 
 const AddItem = () => {
+    const confirmation = () => {
+        window.confirm("Added successfully")
+    }
+
     const { register, handleSubmit } = useForm();
     const onSubmit = data => {
         console.log(data);
@@ -39,13 +44,15 @@ const AddItem = () => {
 
                             <input className='mb-3 ps-3' type='text' placeholder='Supplier Name' {...register("supplier", { require: true, maxLength: 60 })}></input>
 
+                            <input className='mb-3 ps-3' type='email' placeholder='Supplier Email' {...register("email", { require: true, maxLength: 60 })}></input>
+
                             <input className='mb-3 ps-3' type='number' placeholder='Price' {...register("price", { require: true, maxLength: 60 })}></input>
 
                             <input className='mb-3 ps-3' type='number' placeholder='Quantity' {...register("quantity", { require: true, maxLength: 60 })}></input>
 
                             <input className='mb-3 ps-3' type='text' placeholder='Image URL' {...register("img", { require: true, maxLength: 60 })}></input>
 
-                            <input className='w-50 mx-auto btn btn-warning' type="submit"></input>
+                            <input className='w-50 mx-auto btn btn-warning' type="submit" onClick={confirmation}></input>
 
                         </form>
                     </div>

@@ -1,92 +1,83 @@
 [
     {
         "id": 1,
-        "name": "Cold & Flu",
+        "name": "Female Jacket",
         "quantity": 22,
         "price": "600",
         "supplier": "Ab",
-        "description": "Influenza (flu) and the common cold are both contagious respiratory illnesses, but they are caused by different viruses. Flu is caused by influenza viruses only, whereas the common cold can be caused by a number of different viruses, including rhinoviruses, parainfluenza, and seasonal coronaviruses.",
+        "description": "One of the most timeless outfits that are worn by everyone once a year in one season is Jackets. They make quite a fashion statement that has been leaving an impact on the people.",
         "img": "https://i.ibb.co/YP0dwWP/jacket-1-removebg-preview.jpg"
     },
     {
         "id": 2,
-        "name": "Hair Loss",
+        "name": "female suit",
         "quantity": 24,
         "supplier": "Net",
         "price": "600",
-        "description": "It can be the result of heredity, hormonal changes, medical conditions or a normal part of aging. Anyone can lose hair on their head, but it's more common in men. Baldness typically refers to excessive hair loss from your scalp. Hereditary hair loss with age is the most common cause of baldness.",
+        "description": " it an elegant Megan Markel look with a trench coat or a badass Rihanna look with a leather jacket, Jacket makes both happen. The jackets are not just a garment but it is also often used as an accessory in an outfit the way it’s worn.",
         "img": "https://i.ibb.co/CsbBdKv/jacket-2-removebg-preview.jpg"
     },
     {
         "id": 3,
-        "name": "Premature Ejaculation",
+        "name": "Trucker Jacket",
         "quantity": 13,
         "supplier": "Mon",
         "price": "400",
-        "description": "Common treatment options for premature ejaculation include behavioral techniques, topical anesthetics, medications and counseling. Keep in mind that it might take time to find the treatment or combination of treatments that will work for you. Behavioral treatment plus drug therapy might be the most effective course.",
+        "description": "The style is typically short and fitted and often made of blue denim. However, other versions are also available, including suede styles, shearling-trimmed designs, and options in different colors, such as brown and black.",
         "img": "https://i.ibb.co/KLYmDSk/jacket-3-removebg-preview.jpg"
     },
     {
         "id": 4,
-        "name": "Erectile Dysfunction",
+        "name": "Bomber Jacket",
         "quantity": 9,
         "supplier": "Bb",
         "price": "180",
-        "description": "During sexual arousal, nerves release chemicals that increase blood flow into the penis. Blood flows into two erection chambers in the penis, made of spongy muscle tissue (the corpus cavernosum). The corpus cavernosum chambers are not hollow.",
+        "description": "The Bomber jacket was originally worn as a military jacket by the soldiers of Hungarian Cavalry in the American Civil war. The uniform was topped with the jacket.",
         "img": "https://i.ibb.co/Qvj0KdX/jacket-4-removebg-preview.jpg"
     },
     {
         "id": 5,
-        "name": "Online Therapy",
+        "name": "Biker Jacket",
         "supplier": "Con",
         "quantity": 10,
         "price": "100",
-        "description": "Online therapy is psychotherapy that takes place over the internet. Services can be offered over the phone, through video conferencing, or messaging, rather than in person. The industry has grown significantly over the last decade because it fills a real need: Research has shown that 70% of people do not have access to traditional.",
+        "description": "The style originates from the US Air Force, where it was worn by flight crew members. Today, however, the bomber jacket is beloved by men of all professions. Perfect for a range of casual ensembles.",
         "img": "https://i.ibb.co/Ky3D1bS/jacket-5-removebg-preview.jpg"
     },
     {
         "id": 6,
-        "name": "Infection",
+        "name": "Trucker Jacket",
         "supplier": "Ech",
         "quantity": 16,
         "price": "300",
-        "description": "Bacterial infections are treated with antibiotics such as amoxicillin, erythromycin and ciprofloxacin. There are many different types of antibiotic, with different ways of working; the choice depends on the type of infection you have. Bacterial infections are treated with antibiotics such as amoxicillin and ciprofloxacin. Aciclovir is an antiviral medicine used to treat viral infections.",
+        "description": "The style is typically short and fitted and often made of blue denim. However, other versions are also available, including suede styles, shearling-trimmed designs, and options in different colors, such as brown and black.",
         "img": "https://i.ibb.co/M8zD4n4/jacket-6-removebg-preview.jpg"
     },
     {
         "id": 7,
-        "name": "Infection",
+        "name": "Denim Jackets",
         "supplier": "Ttc",
         "quantity": 21,
         "price": "300",
-        "description": "Bacterial infections are treated with antibiotics such as amoxicillin, erythromycin and ciprofloxacin. There are many different types of antibiotic, with different ways of working; the choice depends on the type of infection you have. Bacterial infections are treated with antibiotics such as amoxicillin and ciprofloxacin. Aciclovir is an antiviral medicine used to treat viral infections.",
-        "img": "https://i.ibb.co/M8zD4n4/jacket-6-removebg-preview.jpg"
+        "description": "This versatile outerwear option looks excellent with countless casual and smart casual outfits. It’s also perfect for any time of the year. Wear one on summer nights with a white, crew-neck.",
+        "img": "https://i.ibb.co/CsbBdKv/jacket-2-removebg-preview.jpg"
     },
     {
         "id": 8,
-        "name": "Infection",
+        "name": "Track Jacket",
         "supplier": "Cpscm",
         "quantity": 7,
         "price": "300",
-        "description": "Bacterial infections are treated with antibiotics such as amoxicillin, erythromycin and ciprofloxacin. There are many different types of antibiotic, with different ways of working; the choice depends on the type of infection you have. Bacterial infections are treated with antibiotics such as amoxicillin and ciprofloxacin. Aciclovir is an antiviral medicine used to treat viral infections.",
-        "img": "https://i.ibb.co/M8zD4n4/jacket-6-removebg-preview.jpg"
+        "description": "This comfortable, lightweight style typically features a zip front along with ribbed cuffs and waistband. It’s sporty aesthetic makes it a perfect choice for athleisure outfits.",
+        "img": "https://i.ibb.co/Ky3D1bS/jacket-5-removebg-preview.jpg"
     },
     {
         "id": 9,
-        "name": "Infection",
+        "name": "Blouson Jacket",
         "supplier": "Mams",
         "quantity": 4,
         "price": "300",
-        "description": "Bacterial infections are treated with antibiotics such as amoxicillin, erythromycin and ciprofloxacin. There are many different types of antibiotic, with different ways of working; the choice depends on the type of infection you have. Bacterial infections are treated with antibiotics such as amoxicillin and ciprofloxacin. Aciclovir is an antiviral medicine used to treat viral infections.",
-        "img": "https://i.ibb.co/M8zD4n4/jacket-6-removebg-preview.jpg"
-    },
-    {
-        "id": 10,
-        "name": "Infection",
-        "supplier": "Kni",
-        "quantity": 3,
-        "price": "300",
-        "description": "Bacterial infections are treated with antibiotics such as amoxicillin, erythromycin and ciprofloxacin. There are many different types of antibiotic, with different ways of working; the choice depends on the type of infection you have. Bacterial infections are treated with antibiotics such as amoxicillin and ciprofloxacin. Aciclovir is an antiviral medicine used to treat viral infections.",
+        "description": "The style features fitted or elastic cuffs and waistband, which cause the material to gather and “blouse” over the wrists and waist. As such, the style is similar to a bomber jacket.",
         "img": "https://i.ibb.co/M8zD4n4/jacket-6-removebg-preview.jpg"
     }
 ]

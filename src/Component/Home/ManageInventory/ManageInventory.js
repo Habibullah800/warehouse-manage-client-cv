@@ -2,6 +2,7 @@ import React from 'react';
 import './ManageInventory.css'
 
 import useProducts from '../../Hooks/useProduct';
+import { Link } from 'react-router-dom';
 
 const ManageInventory = () => {
     const [products, setProducts] = useProducts();
@@ -40,6 +41,10 @@ const ManageInventory = () => {
                     </div>)
                 }
             </div>
+
+            <Link to='/addItem'>
+                <button className='btn btn-warning mt-5' > Add extra Inventory </button>
+            </Link>
 
         </div>
     );

@@ -12,6 +12,14 @@ const Delivery = ({ product }) => {
             setCount(count - 1);
         }
     }
+
+    const addQuantity = () => {
+        if (count >= 0) {
+            setCount(count + 1);
+        }
+    }
+
+
     return (
         <div>
 
@@ -25,9 +33,11 @@ const Delivery = ({ product }) => {
 
                 <button className='btn btn-primary me-5' onClick={deliveryQuantity}> Delivery </button>
 
+                <button className='btn btn-primary me-5' onClick={addQuantity}> Add stock </button>
+
 
                 <Link to='/addItem'>
-                    <button className='btn btn-primary' > Add Item </button>
+                    <button className='btn btn-warning' > Add extra Item </button>
                 </Link>
 
 
