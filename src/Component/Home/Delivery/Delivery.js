@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { Link } from 'react-router-dom';
 import './Delivery.css'
 const Delivery = ({ product }) => {
     const { name, price, description, img, quantity } = product;
@@ -22,8 +23,14 @@ const Delivery = ({ product }) => {
                 <p>Price: ${price}</p>
                 <p><small>{description}</small></p>
 
-                <button className='btn btn-primary' onClick={deliveryQuantity}> Delivery </button>
-                {/* <Link className='btn btn-primary' to='/login'> Update</Link> */}
+                <button className='btn btn-primary me-5' onClick={deliveryQuantity}> Delivery </button>
+
+
+                <Link to='/addItem'>
+                    <button className='btn btn-primary' > Add Item </button>
+                </Link>
+
+
             </div>
         </div>
     );

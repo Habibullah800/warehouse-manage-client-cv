@@ -6,8 +6,10 @@ import NotFound from './Component/Home/404/NotFound';
 import Register from './Component/Home/Register/Register';
 import Login from './Component/Home/Login/Login';
 import Home from './Component/Home/Home/Home';
-import Delivery from './Component/Home/Delivery/Delivery';
 import DeliveryBtn from './Component/Home/DeliveryBtn/DeliveryBtn';
+import AddItem from './Component/Home/AddItem/AddItem';
+import ManageInventory from './Component/Home/ManageInventory/ManageInventory';
+import Manage from './Component/Home/ManageInventory/Manage';
 
 
 function App() {
@@ -21,6 +23,8 @@ function App() {
         <Route path='login' element={<Login></Login>}></Route>
         <Route path='register' element={<Register></Register>}></Route>
         <Route path='delivery' element={<DeliveryBtn></DeliveryBtn>}></Route>
+        <Route path='addItem' element={<AddItem></AddItem>}></Route>
+        <Route path='manageInventory' element={<Manage></Manage>}></Route>
         <Route path='/*' element={<NotFound></NotFound>}></Route>
       </Routes >
 

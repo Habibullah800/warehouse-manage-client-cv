@@ -1,11 +1,10 @@
 import React, { useEffect, useState } from 'react';
-import Delivery from '../Delivery/Delivery';
-import ManageInventory from '../ManageInventory/ManageInventory';
-import './DeliveryBtn.css'
 
-const DeliveryBtn = () => {
+import ManageInventory from './ManageInventory';
 
+const Manage = () => {
     const [products, setProducts] = useState([])
+
 
     useEffect(() => {
         fetch('Data.json')
@@ -14,18 +13,15 @@ const DeliveryBtn = () => {
 
     }, []);
     return (
-        <div className='product-container'>
+        <div>
             {
-                products.map(product => <Delivery
+                products.map(product => <ManageInventory
                     key={product.id}
                     product={product}
-
-                ></Delivery>)
+                ></ManageInventory>)
             }
-
-
         </div>
     );
 };
 
-export default DeliveryBtn;
+export default Manage;

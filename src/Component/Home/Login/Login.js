@@ -63,9 +63,6 @@ const Login = () => {
     const navigateRegister = event => {
         navigate('/register')
     }
-    const navigateDelivery = event => {
-        navigate('/delivery')
-    }
 
     return (
         <div className='login-container'>
@@ -76,7 +73,6 @@ const Login = () => {
                 user?.uid
                     ?
                     <div className='mb-4' >
-                        {/* <Link className='btn btn-warning' to='/delivery'> Take our Treatment</Link> */}
                         <DeliveryBtn></DeliveryBtn>
                     </div>
                     :
