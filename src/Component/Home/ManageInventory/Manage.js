@@ -1,17 +1,11 @@
-import React, { useEffect, useState } from 'react';
+import useProducts from '../../Hooks/useProduct';
 
 import ManageInventory from './ManageInventory';
 
 const Manage = () => {
-    const [products, setProducts] = useState([])
 
+    const [products] = useProducts();
 
-    useEffect(() => {
-        fetch('Data.json')
-            .then(res => res.json())
-            .then(data => setProducts(data));
-
-    }, []);
     return (
         <div>
             {

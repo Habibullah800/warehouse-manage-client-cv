@@ -11,6 +11,7 @@ import AddItem from './Component/Home/AddItem/AddItem';
 import ManageInventory from './Component/Home/ManageInventory/ManageInventory';
 import Manage from './Component/Home/ManageInventory/Manage';
 import Blog from './Component/Home/Blog/Blog';
+import MyItem from './Component/MyItem/MyItem';
 
 
 function App() {
@@ -25,6 +26,7 @@ function App() {
         <Route path='register' element={<Register></Register>}></Route>
         <Route path='delivery' element={<DeliveryBtn></DeliveryBtn>}></Route>
         <Route path='addItem' element={<AddItem></AddItem>}></Route>
+        <Route path='myitem' element={<MyItem></MyItem>}></Route>
         <Route path='manageInventory' element={<Manage></Manage>}></Route>
         <Route path='/*' element={<NotFound></NotFound>}></Route>
       </Routes >

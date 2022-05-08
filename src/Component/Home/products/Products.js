@@ -1,16 +1,10 @@
-import React, { useEffect, useState } from 'react';
-import Delivery from '../Delivery/Delivery';
+import useProducts from '../../Hooks/useProduct';
 import Product from '../product/Product';
 import './Products.css'
 
 const Services = () => {
-    const [services, setServices] = useState([])
+    const [products] = useProducts();
 
-    useEffect(() => {
-        fetch('http://localhost:5000/product')
-            .then(res => res.json())
-            .then(data => setServices(data));
-    }, []);
 
     return (
         <div className='title'>
@@ -20,7 +14,7 @@ const Services = () => {
             <div className='service-container'>
 
                 {
-                    services.slice(0, 6).map(service => <Product
+                    products.slice(0, 6).map(service => <Product
                         key={service._id}
                         service={service}
 

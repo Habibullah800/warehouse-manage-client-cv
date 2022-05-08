@@ -18,36 +18,34 @@ const Header = () => {
 
                             <Link className='navText' to="/">Home</Link>
 
-
-
-
-
                             {
                                 user?.uid
                                     ?
-
-                                    <Link className='navText' to="/manageInventory">Manage Inventory</Link>
-
-
-
+                                    <Link className='navText' to="/myitem">My Item</Link>
                                     :
                                     <div ></div>
-
                             }
-
-
-
 
 
                             <Link className='navText' to="/addItem">Add Item</Link>
                             <Link className='navText' to="/blog">blog</Link>
-                            <Link className='navText' to="/about">About</Link>
+
 
                         </Nav>
                         <Nav>
-                            <span className='userName me-2'> {user?.displayName && user.displayName}</span>
 
-                            <span> <img className='photo me-2' src={photo} alt=''></img></span>
+                            {
+                                user?.uid
+                                    ?
+                                    <Link className='navText mt-1' to="/manageInventory">Manage Inventory</Link>
+                                    :
+                                    <div ></div>
+                            }
+
+                            <Link className='navText me-4 mt-1' to="/about">About</Link>
+                            <span className='userName me-2 mt-1'> {user?.displayName && user.displayName}</span>
+
+                            <span> <img className='photo me-2 ' src={photo} alt=''></img></span>
 
                             {
                                 user?.uid

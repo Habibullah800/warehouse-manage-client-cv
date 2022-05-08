@@ -1,9 +1,7 @@
 import React from 'react';
 import './ManageInventory.css'
 import { Table } from 'react-bootstrap';
-import { Link } from 'react-router-dom';
 import useFirebase from '../../Hooks/UseFirebase';
-import Manage from './Manage';
 import './ManageInventory.css'
 const ManageInventory = ({ product }) => {
     const { user } = useFirebase()

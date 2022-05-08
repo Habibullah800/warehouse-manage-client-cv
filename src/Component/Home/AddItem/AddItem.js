@@ -6,12 +6,24 @@ import useFirebase from '../../Hooks/UseFirebase';
 import "./AddItem.css"
 
 
-
 const AddItem = () => {
     const { register, handleSubmit } = useForm();
-    const onSubmit = data => console.log(data);
+    const onSubmit = data => {
+        console.log(data);
+        const url = `http://localhost:5000/product`;
+        fetch(url, {
+            method: 'POST',
+            headers: {
+                'content-type': 'application/json'
+            },
+            body: JSON.stringify(data)
+        })
+            .then(res => res.json())
+            .then(result => {
+                console.log(result);
+            })
+    };
     const { user } = useFirebase()
-
     return (
         <div className='addItem'>
             <h2 className='mb-5 mt-4'>Here you can add any Item</h2>
@@ -21,7 +33,7 @@ const AddItem = () => {
                     ?
                     <div className=' mx-auto form' >
                         <form className='d-flex flex-column' onSubmit={handleSubmit(onSubmit)}>
-                            <input className='mb-3 ps-3' type='text' placeholder='Product Name' {...register("name", { require: true, maxLength: 20 })}></input>
+                            <input className='mb-3 ps-3 ' type='text' placeholder='Product Name' {...register("name", { require: true, maxLength: 20 })}></input>
 
                             <textarea className='mb-3 ps-3' type='text' placeholder='Short Description' {...register("description", { require: true, maxLength: 60 })}></textarea>
 
@@ -31,11 +43,9 @@ const AddItem = () => {
 
                             <input className='mb-3 ps-3' type='number' placeholder='Quantity' {...register("quantity", { require: true, maxLength: 60 })}></input>
 
+                            <input className='mb-3 ps-3' type='text' placeholder='Image URL' {...register("img", { require: true, maxLength: 60 })}></input>
 
-                            <input className='mb-3 ps-3' type='text' placeholder='Image URL' {...register("img", { require: true, maxLength: 20 })}></input>
-
-
-                            <input className='w-50 mx-auto btn btn-warning' type="submit" ></input>
+                            <input className='w-50 mx-auto btn btn-warning' type="submit"></input>
 
                         </form>
                     </div>
