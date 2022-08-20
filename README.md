@@ -1,5 +1,5 @@
 # Live link
-Live link: (https://ware-house-management-54136.web.app/)
+Live link: 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 
